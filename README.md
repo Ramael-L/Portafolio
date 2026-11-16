@@ -9,7 +9,7 @@ I made this portfolio to introduce myself, show my skills, and share my projects
 
 I started with HTML to organize my page. I used `header`, `nav`, `main`, `section`, `article`, and `footer` to keep my code clear.
 
-Then I added Tailwind CSS using a CDN link. I did not need to install it. I used Tailwind classes in my HTML to add colors, spaces, borders, and layouts.
+Then I used Tailwind CSS classes in my HTML to add colors, spaces, borders, and layouts. At first I used a CDN. Later I saved the compiled styles in `css/output.css` so my website can show its design without loading Tailwind JavaScript.
 
 I also created three colors for my website:
 
@@ -46,7 +46,7 @@ I still need more practice, but this project helped me understand how to build a
 1. Download the project files.
 2. Open the HTML file in Visual Studio Code.
 3. Open the website with Live Server.
-4. Keep an internet connection because Tailwind and Bootstrap use CDN links.
+4. Tailwind styles are saved in `css/output.css`. Bootstrap still loads from a CDN for one small badge, with a local fallback.
 
 The profile image must be in the correct folder. The email contact is not configured yet.
 
