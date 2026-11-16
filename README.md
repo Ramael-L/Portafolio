@@ -7,7 +7,7 @@ I made this portfolio to introduce myself, show my skills, and share my projects
 
 I started with HTML to organize my page. I used `header`, `nav`, `main`, `section`, `article`, and `footer` to keep my code clear.
 
-Then I used Tailwind CSS classes in my HTML to add colors, spaces, borders, and layouts. At first I used a CDN. Later I saved the compiled styles in `css/output.css` so my website can show its design without loading Tailwind JavaScript.
+I used Tailwind CSS with a CDN link, just like I learned in class. I add classes in my HTML for colors, spaces, borders, and layouts. My custom colors are `principal`, `verde`, and `acento`.
 
 I also created three colors for my website:
 
@@ -44,7 +44,7 @@ I still need more practice, but this project helped me understand how to build a
 1. Download the project files.
 2. Open the HTML file in Visual Studio Code.
 3. Open the website with Live Server.
-4. Tailwind styles are saved in `css/output.css`. Bootstrap still loads from a CDN for one small badge, with a local fallback.
+4. Keep an internet connection because Tailwind and Bootstrap load from CDN links.
 
 The profile image must be in the correct folder. The contact button opens an email message with my address as the recipient.
 
@@ -57,7 +57,9 @@ This is my learning project. I want to improve it as I learn more about programm
 ## Live website
 
 https://ramael-l.github.io/Portafolio/
+ 
+## Why I returned to Tailwind CDN
 
-## Why I keep `output.css`
+When I opened my published website, some Tailwind styles did not appear. We tried saving the generated CSS in a separate `output.css` file. It worked as another way to load styles, but it was more complicated than what I had learned.
 
-I started using Tailwind with a CDN. When I published the website, some styles did not load. Now I keep the generated CSS in `css/output.css`. I made the file easier to read, but the class names stay the same. The HTML is still the structure of the page, and CSS only changes its appearance.
+I decided to use the CDN link again and keep Tailwind classes in my HTML. I do not need a compiled CSS file for this class exercise. If styles do not load again, I should check my internet connection and the browser's Network and Console panels. The original problem was not confirmed to have one specific cause.
