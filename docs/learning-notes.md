@@ -53,3 +53,24 @@ No sé todavía si el error inicial fue del CDN, de una extensión, de la
 conexión o de otra configuración del navegador. También debo revisar
 el zoom de Chrome, porque en la captura el contenido se veía diminuto.
 Esta corrección queda pendiente de comprobar en la página publicada.
+
+## 16 de noviembre de 2026 - Corregí el conflicto de colores
+
+Mirando las capturas encontré otro problema: Tailwind sí organizaba las
+tarjetas y los espacios, pero el fondo del portafolio salía blanco y
+algunos enlaces aparecían azules. Tenía Bootstrap y Tailwind v4 cargados
+en la misma página. Bootstrap estaba cambiando algunos colores.
+
+Para resolverlo quité el enlace completo de Bootstrap, porque solo lo
+usaba para una etiqueta pequeña. Hice esa etiqueta con clases Tailwind:
+bg-verde, rounded-lg, px-3 y py-1. No creé un archivo output.css.
+
+Conservé los colores que ya había escogido: principal #0b1713,
+verde #1E7A4F y acento #36D98A. Ahora la página vuelve a depender
+solo de Tailwind para el diseño. La explicación de las pruebas anteriores
+sigue arriba para mostrar el proceso de aprendizaje.
+
+Comprobé el motivo del conflicto con una prueba local de prioridad de
+estilos CSS. Todavía falta revisar en el navegador el sitio publicado,
+sus tamaños de pantalla y la consola. No registré un cronómetro ni
+un tiempo que no haya medido.

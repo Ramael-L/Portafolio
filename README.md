@@ -19,7 +19,7 @@ I used Flexbox for the menu and the introduction. I used Grid for my skills and 
 
 I also used responsive classes like `md:flex-row` and `md:grid-cols-3` to change the layout on different screen sizes.
 
-I added one small Bootstrap badge to practice using this framework. Most of my design uses Tailwind CSS.
+I used Tailwind CSS for the full design, including the small green label under my introduction.
 
 ## What is on my website?
 
@@ -44,7 +44,7 @@ I still need more practice, but this project helped me understand how to build a
 1. Download the project files.
 2. Open the HTML file in Visual Studio Code.
 3. Open the website with Live Server.
-4. Keep an internet connection because Tailwind and Bootstrap load from CDN links.
+4. Keep an internet connection because Tailwind CSS loads from a CDN link.
 
 The profile image must be in the correct folder. The contact button opens an email message with my address as the recipient.
 
@@ -71,3 +71,12 @@ Al abrir el portafolio en GitHub Pages, vi que la imagen aparecía, pero los col
 Después cambiamos el enlace de Tailwind v3 por el CDN oficial de Tailwind v4, alojado en jsDelivr. Sigo poniendo las clases directamente en el HTML. Los tres colores de mi portafolio se definen en un bloque pequeño de @theme dentro del head. No tengo que instalar ni compilar archivos.
 
 El navegador necesita internet para descargar Tailwind. Si vuelve a fallar, debo revisar F12 > Network y Console, además de comprobar el zoom de Chrome con Ctrl + 0. No considero resuelto el problema hasta comprobar la página desde mi navegador.
+
+
+## Fixing my colors (16 November 2026)
+
+When I opened my published portfolio, the background was white, the links were blue, and some text was hard to see. The HTML loaded, but my colors were different. I found that Bootstrap CSS and Tailwind v4 were both styling the same page. Bootstrap styles could override Tailwind colors.
+
+I removed the full Bootstrap stylesheet because the portfolio only used it for one small badge. I replaced that badge with Tailwind classes. I kept my original colors: dark green `#0b1713`, green `#1E7A4F`, and bright green `#36D98A`.
+
+I still use Tailwind directly from the CDN, with no generated `output.css`. I need to check the complete published page in my browser, including the links and responsive view.
