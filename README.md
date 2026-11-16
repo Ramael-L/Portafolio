@@ -63,3 +63,11 @@ https://ramael-l.github.io/Portafolio/
 When I opened my published website, some Tailwind styles did not appear. We tried saving the generated CSS in a separate `output.css` file. It worked as another way to load styles, but it was more complicated than what I had learned.
 
 I decided to use the CDN link again and keep Tailwind classes in my HTML. I do not need a compiled CSS file for this class exercise. If styles do not load again, I should check my internet connection and the browser's Network and Console panels. The original problem was not confirmed to have one specific cause.
+
+## Actualización del enlace de Tailwind (16/11/2026)
+
+Al abrir el portafolio en GitHub Pages, vi que la imagen aparecía, pero los colores y las tarjetas no. No pude confirmar la causa exacta desde el navegador. Primero probamos un archivo output.css, pero lo quitamos porque en clase usamos Tailwind directamente desde un enlace CDN.
+
+Después cambiamos el enlace de Tailwind v3 por el CDN oficial de Tailwind v4, alojado en jsDelivr. Sigo poniendo las clases directamente en el HTML. Los tres colores de mi portafolio se definen en un bloque pequeño de @theme dentro del head. No tengo que instalar ni compilar archivos.
+
+El navegador necesita internet para descargar Tailwind. Si vuelve a fallar, debo revisar F12 > Network y Console, además de comprobar el zoom de Chrome con Ctrl + 0. No considero resuelto el problema hasta comprobar la página desde mi navegador.

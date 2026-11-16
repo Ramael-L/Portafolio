@@ -38,3 +38,18 @@ Todavía no sé cuál fue la causa exacta del error de la captura.
 Si vuelve a ocurrir debo revisar el navegador con F12, abrir Network
 y Console, comprobar si el script carga y probar la conexión.
 No puedo decir que este cambio garantice que el CDN funcione siempre.
+
+## 16 de noviembre de 2026 - Segunda corrección de la carga de Tailwind
+
+El portafolio seguía apareciendo blanco, aunque había restaurado el enlace
+original. No era suficiente volver a poner el mismo CDN.
+
+Cambiamos a otro enlace oficial de Tailwind que se descarga desde jsDelivr.
+Sigo escribiendo clases en el HTML, sin crear output.css ni instalar nada.
+Para conservar mis colores principal, verde y acento, dejé @theme dentro
+del head. Es una configuración corta de Tailwind v4.
+
+No sé todavía si el error inicial fue del CDN, de una extensión, de la
+conexión o de otra configuración del navegador. También debo revisar
+el zoom de Chrome, porque en la captura el contenido se veía diminuto.
+Esta corrección queda pendiente de comprobar en la página publicada.
